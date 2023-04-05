@@ -7,9 +7,8 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
-
 // Mongoose connection
-mongoose.connect('mongodb+srv://sreenathg89:admin@cluster0.fynp4qa.mongodb.net/userRehacare', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('<DB_USERNAME>/<DB_PASSWORD>', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('MongoDB Connection Succeeded.');
   })
