@@ -21,7 +21,7 @@ const db = mongoose.connection;
 
 // Session configuration
 app.use(session({
-  secret: 'work hard',
+  secret: 'my secret',
   resave: true,
   saveUninitialized: false,
   store: new MongoStore({
